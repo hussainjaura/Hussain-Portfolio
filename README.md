@@ -47,12 +47,13 @@ A personal productivity/task management web app.
 ### 3. Jaura's Theme Park Website (University Assessment)
 Live App: https://jaura-theme-park.onrender.com
 
+- Note: Free Version of render deployment app does not support images.
+
 A full-stack theme park website with database-driven content and an interactive game.
 
 ### Github Repository:
-- [https://github.com/hussainjaura/Theme-Park
-- Note: Free Version of render deployment app does not support images.
-
+- [https://github.com/hussainjaura/Theme-Park]
+  
 - Tech Stack: Node.js, Express, SQLite3, EJS, JavaScript, HTML5, CSS, AJAX
 
 #### Features:
