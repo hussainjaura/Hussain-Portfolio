@@ -50,7 +50,8 @@ Live App: https://jaura-theme-park.onrender.com
 A full-stack theme park website with database-driven content and an interactive game.
 
 ### Github Repository:
-- [https://github.com/hussainjaura/Theme-Park]
+- [https://github.com/hussainjaura/Theme-Park
+- Note: Free Version of render deployment app does not support images.
 
 - Tech Stack: Node.js, Express, SQLite3, EJS, JavaScript, HTML5, CSS, AJAX
 
