@@ -8,6 +8,9 @@ Scroll below to explore live demos, source code, documentation, and a little mor
 ### 1. Jaura & Co Clothing Website (Internship Project)
 Live App: https://jaura-co-website.onrender.com
 
+### Github Repository:
+- [https://github.com/hussainjaura/Jaura-Co-Website]
+
 A fully featured e-commerce site built for internship/placement.
 
 - Tech Stack: Node.js, Express, MySQL, Sequelize, EJS, Stripe, Helmet, Bcrypt.js, AJAX, Jest, Winston
@@ -25,6 +28,9 @@ A fully featured e-commerce site built for internship/placement.
 ### 2. Jaura's Task Manager App (Internship Project)
 Live App: https://task-manager-hoaa.onrender.com
 
+### Github Repository:
+- [https://github.com/hussainjaura/Task-Manager]
+
 A personal productivity/task management web app.
 
 - Tech Stack: Node.js, Express, MongoDB, Mongoose, WebSockets, Socket.IO, HTML/CSS, AJAX
@@ -40,6 +46,9 @@ A personal productivity/task management web app.
 
 ### 3. Jaura's Theme Park Website (University Assessment)
 A full-stack theme park website with database-driven content and an interactive game.
+
+### Github Repository:
+- [https://github.com/hussainjaura/Theme-Park]
 
 - Tech Stack: Node.js, Express, SQLite3, EJS, JavaScript, HTML5, CSS, AJAX
 
