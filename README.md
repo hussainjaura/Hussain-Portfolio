@@ -1,5 +1,8 @@
 # Hussain Jaura – Developer Portfolio
-Welcome! This repository serves as a central hub for showcasing my coding projects. Each project demonstrates different skills, technologies, and frameworks I've worked with. Scroll below to explore live demos, code, documentation, and a little about me.
+### Welcome!
+This repository serves as a central hub for showcasing my coding projects. I'm a passionate Software Engineering student at Solent University, Southampton, with a strong enthusiasm for full-stack development and problem-solving. Each project here reflects my commitment to learning, building, and continuously improving as a developer. You'll find a variety of technologies, frameworks, and concepts I’ve explored through hands-on development.
+
+Scroll below to explore live demos, source code, documentation, and a little more about me.
 
 ## Projects
 ### 1. Jaura & Co Clothing Website (Internship Project)
