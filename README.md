@@ -112,4 +112,8 @@ With hands-on experience in building RESTful APIs, handling user authentication,
 
 I'm a strong believer in continuous learning, clean code practices, and teamwork. Whether collaborating on a group project or working independently, I bring a problem-solving mindset and a passion for delivering meaningful tech solutions. Currently, I'm seeking opportunities to apply my skills in real-world environments, grow as a developer, and contribute to impactful projects.
 
+## Contact:
+
+- Email: [hussainjaura10@gmail.com]
+- LinkedIn: [https://www.linkedin.com/in/muhammad-hussain-jaura-b303482b1/]
 
