@@ -104,7 +104,7 @@ A full-stack theme park website with database-driven content and an interactive 
 - Real-Time App Logic
 
 # About Me
-I'm a passionate and driven Software Engineering student at Solent University, Southampton, with a strong interest in full-stack web development and backend engineering. I specialize in using technologies like Node.js, Express.js, MongoDB, and MySQL to build scalable, data-driven applications, and I'm equally comfortable with front-end tools such as HTML, CSS, JavaScript, and EJS to create clean, responsive user interfaces.
+I'm a passionate and driven Software Engineering student at **Solent University**, **Southampton**, with a strong interest in **full-stack web development** and **backend engineering**. I specialize in using technologies like Node.js, Express.js, MongoDB, and MySQL to build scalable, data-driven applications, and I'm equally comfortable with front-end tools such as HTML, CSS, JavaScript, and EJS to create clean, responsive user interfaces.
 
 Beyond academics, I actively enhance my skills through regular problem-solving on platforms like LeetCode, where I strengthen my understanding of data structures, algorithms, and their complexities. I take pride in writing efficient, maintainable code and enjoy the challenge of debugging and optimizing applications for performance.
 
