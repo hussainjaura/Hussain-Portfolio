@@ -45,6 +45,8 @@ A personal productivity/task management web app.
 - Secure and scalable backend with environment variable handling
 
 ### 3. Jaura's Theme Park Website (University Assessment)
+Live App: https://jaura-theme-park.onrender.com
+
 A full-stack theme park website with database-driven content and an interactive game.
 
 ### Github Repository:
