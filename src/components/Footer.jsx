@@ -1,0 +1,31 @@
+import { profile } from '../data.js'
+import { GithubIcon, LinkedinIcon, YoutubeIcon, MailIcon, FileIcon } from './Icons.jsx'
+
+export default function Footer() {
+  const { socials } = profile
+  const cvUrl = profile.cv ? `${import.meta.env.BASE_URL}${profile.cv}` : ''
+
+  return (
+    <footer id="contact" className="footer">
+      <div className="cta glass reveal">
+        <h2>Let's build something <span className="grad">together</span></h2>
+        <p className="muted">I'm open to full stack engineering roles. My inbox is always open, so feel free to reach out.</p>
+        <div className="hero-actions center-row">
+          <a className="btn btn-primary" href={`mailto:${profile.email}`}><MailIcon /> Get In Touch</a>
+          {cvUrl
+            ? <a className="btn btn-ghost" href={cvUrl} target="_blank" rel="noreferrer"><FileIcon /> Download CV</a>
+            : <span className="btn btn-ghost disabled"><FileIcon /> CV coming soon</span>}
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <div className="nav-socials">
+          <a href={socials.linkedin} target="_blank" rel="noreferrer" aria-label="linkedin"><LinkedinIcon /></a>
+          <a href={socials.github} target="_blank" rel="noreferrer" aria-label="github"><GithubIcon /></a>
+          {socials.youtube && <a href={socials.youtube} target="_blank" rel="noreferrer" aria-label="youtube"><YoutubeIcon /></a>}
+          <a href={`mailto:${profile.email}`} aria-label="email"><MailIcon /></a>
+        </div>
+        <p className="muted small">© Copyright {new Date().getFullYear()} | Created by {profile.fullName}</p>
+      </div>
+    </footer>
+  )
+}
