@@ -53,7 +53,7 @@ export default function ContactModal({ open, onClose }) {
 
         <div className="modal-head">
           <span className="status-dot" /> <span className="muted small">Open to full stack roles · replies within a day</span>
-          <h2>Let's <span className="grad">talk</span> 👋</h2>
+          <h2>Let's <span className="grad">talk</span></h2>
         </div>
 
         <div className="email-box">

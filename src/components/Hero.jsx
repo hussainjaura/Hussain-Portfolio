@@ -19,7 +19,7 @@ export default function Hero({ onContact }) {
   return (
     <section id="top" className="hero" onMouseMove={onMove}>
       <div className="hero-text reveal">
-        <p className="eyebrow">Hey, I'm {profile.name}. <span className="wave">👋</span></p>
+        <p className="eyebrow">Hey, I'm {profile.name}.</p>
         <p className="role">{profile.role}</p>
         <h1>
           Turning ideas into fast, reliable web apps with <span className="grad">Full Stack Engineering</span>

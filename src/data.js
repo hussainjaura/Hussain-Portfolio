@@ -92,9 +92,9 @@ export const different = [
 ]
 
 export const achievements = [
-  { title: 'Software Engineer Intern at Co-op', desc: 'Eight months on a real engineering team shipping features and APIs used across Co-op digital platforms.', icon: '💼' },
-  { title: '20% tuition scholarship', desc: 'Awarded a 20% tuition discount at Solent University for academic performance.', icon: '🎓' },
-  { title: 'Highest mark, 93%', desc: 'Top grade on the full stack Theme Park assessment, while keeping a First-Class average.', icon: '🏆' },
+  { title: 'Software Engineer Intern at Co-op', desc: 'Eight months on a real engineering team shipping features and APIs used across Co-op digital platforms.', issuer: 'Co-op', logo: 'Co', logoImg: 'logos/the_co_op_group_logo.jpg' },
+  { title: '20% tuition scholarship', desc: 'Awarded a 20% tuition discount at Solent University for academic performance.', issuer: 'Solent University', logo: 'SU', logoImg: 'logos/solentuni_logo.jpg' },
+  { title: 'Highest mark, 93%', desc: 'Top grade on the full stack Theme Park assessment, while keeping a First-Class average.', issuer: 'Solent University', logo: 'SU', logoImg: 'logos/solentuni_logo.jpg' },
 ]
 
 export const projects = [
