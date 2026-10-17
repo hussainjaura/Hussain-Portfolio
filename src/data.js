@@ -107,8 +107,8 @@ export const projects = [
       '3D tilt cards, a mouse reactive particle background and scroll animations, no UI libraries.',
       'Contact popup with copy to clipboard and a working message form, deployed on GitHub Pages.',
     ],
-    live: 'https://hussainjaura.github.io/',
-    repo: 'https://github.com/hussainjaura/hussainjaura.github.io',
+    live: 'https://hussainjaura.github.io/Hussain-Portfolio/',
+    repo: 'https://github.com/hussainjaura/Hussain-Portfolio',
   },
   {
     name: 'HalalNearMe',
