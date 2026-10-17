@@ -5,7 +5,9 @@ import { GithubIcon, LinkedinIcon, YoutubeIcon, MailIcon, CloseIcon, ExternalIco
 export default function ContactModal({ open, onClose }) {
   const [copied, setCopied] = useState(false)
   const [name, setName] = useState('')
+  const [from, setFrom] = useState('')
   const [msg, setMsg] = useState('')
+  const [status, setStatus] = useState('idle')
   const { socials, email } = profile
 
   // close on esc and stop the page scrolling behind
@@ -32,13 +34,28 @@ export default function ContactModal({ open, onClose }) {
     setTimeout(() => setCopied(false), 2000)
   }
 
-  // no backend so this just opens their mail app with it filled in
-  const send = (e) => {
+  // no backend so formsubmit emails it to me
+  const send = async (e) => {
     e.preventDefault()
-    const subject = encodeURIComponent(`Hello from ${name || 'your portfolio'}`)
-    const body = encodeURIComponent(msg)
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
+    setStatus('sending')
+    try {
+      const res = await fetch(`https://formsubmit.co/ajax/${email}`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ name, email: from, message: msg, _subject: `Portfolio message from ${name || 'someone'}`, _template: 'table' }),
+      })
+      if (!res.ok) throw new Error('send failed')
+      setName('')
+      setFrom('')
+      setMsg('')
+      setStatus('sent')
+    } catch {
+      setStatus('error')
+    }
+    setTimeout(() => setStatus('idle'), 4000)
   }
+
+  const label = { idle: 'Send message', sending: 'Sending...', sent: 'Message sent ✓', error: "Couldn't send, try email above" }[status]
 
   const links = [
     { label: 'LinkedIn', sub: 'Connect with me', href: socials.linkedin, icon: <LinkedinIcon /> },
@@ -78,9 +95,12 @@ export default function ContactModal({ open, onClose }) {
         <div className="divider"><span>or send a quick message</span></div>
 
         <form className="quick-form" onSubmit={send}>
-          <input placeholder="Your name / company" value={name} onChange={(e) => setName(e.target.value)} />
+          <input placeholder="Your name / company" value={name} onChange={(e) => setName(e.target.value)} required />
+          <input type="email" placeholder="Your email" value={from} onChange={(e) => setFrom(e.target.value)} required />
           <textarea placeholder="Hi Hussain, we'd love to chat about..." rows={3} value={msg} onChange={(e) => setMsg(e.target.value)} required />
-          <button className="btn btn-primary" type="submit"><MailIcon /> Send message</button>
+          <button className={`btn btn-primary send-btn ${status}`} type="submit" disabled={status === 'sending'}>
+            {status === 'idle' && <MailIcon />} {label}
+          </button>
         </form>
       </div>
     </div>

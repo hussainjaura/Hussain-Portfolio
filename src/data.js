@@ -99,6 +99,18 @@ export const achievements = [
 
 export const projects = [
   {
+    name: 'Developer Portfolio',
+    tag: 'Personal project · this site',
+    tech: ['React', 'Vite', 'JavaScript', 'CSS3', 'GitHub Pages', 'FormSubmit'],
+    points: [
+      'The site you are on right now, built from scratch with React and Vite.',
+      '3D tilt cards, a mouse reactive particle background and scroll animations, no UI libraries.',
+      'Contact popup with copy to clipboard and a working message form, deployed on GitHub Pages.',
+    ],
+    live: 'https://hussainjaura.github.io/',
+    repo: 'https://github.com/hussainjaura/hussainjaura.github.io',
+  },
+  {
     name: 'HalalNearMe',
     tag: 'Personal project',
     tech: ['React 19', 'Node.js', 'Express', 'AWS Lambda', 'AWS Amplify', 'PostgreSQL', 'JWT'],
