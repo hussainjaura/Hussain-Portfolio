@@ -1,13 +1,16 @@
+// the bits this section needs:
 import Heading from './Heading.jsx'
 import TiltCard from './TiltCard.jsx'
 import Logo from './Logo.jsx'
 import { certificates } from '../data.js'
 
+// certificates section, one card for each cert:
 export default function Certificates() {
   return (
     <section id="certificates" className="section">
       <Heading>Certificates earned <span className="grad">so far...</span></Heading>
       <div className="cert-grid">
+        {/* logo on the left and the cert details next to it: */}
         {certificates.map((c) => (
           <TiltCard key={c.name} className="cert-card reveal" max={6}>
             <Logo item={c} />

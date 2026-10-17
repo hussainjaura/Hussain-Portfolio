@@ -1,3 +1,4 @@
+// the big title on top of every section:
 export default function Heading({ children, sub }) {
   return (
     <div className="heading reveal">

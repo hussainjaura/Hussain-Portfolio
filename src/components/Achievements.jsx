@@ -1,13 +1,16 @@
+// the bits this section needs:
 import Heading from './Heading.jsx'
 import TiltCard from './TiltCard.jsx'
 import Logo from './Logo.jsx'
 import { achievements } from '../data.js'
 
+// achievments section with a card for each one:
 export default function Achievements() {
   return (
     <section id="achievements" className="section">
       <Heading>Some of my <span className="grad">Achievements...</span></Heading>
       <div className="ach-grid">
+        {/* one tilt card per achievement with its logo: */}
         {achievements.map((a) => (
           <TiltCard key={a.title} className="ach-card reveal">
             <Logo item={a} big />

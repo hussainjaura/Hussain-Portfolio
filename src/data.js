@@ -1,17 +1,20 @@
-// all my info lives here so i only have to change one file
+// all my info lives here so i only have to change one file:
 export const profile = {
+  // my name, role and the intro on the main page:
   name: 'Hussain',
   fullName: 'Muhammad Hussain Jaura',
   role: 'Full Stack Software Engineer',
   headline: 'Turning ideas into fast, reliable web apps with Full Stack Engineering',
   intro:
     "I'm a Software Engineering student at Solent University in Southampton, and I've just finished a Software Engineer internship at Co-op. I build full stack apps with React, Node.js and Express, ship them to the cloud on AWS, and I'm always looking for the next hard problem to solve.",
+  // where i am and my email:
   location: 'Southampton, UK',
   email: 'hussainjaura10@gmail.com',
-  // put ur photo in public/ with this name
+  // my pic:
   photo: 'me.jpg',
-  // drop the pdf in public/ and set this to 'cv.pdf'
+  // drop the pdf in public/ and set this to 'cv.pdf' later on:
   cv: '',
+  // my social links, add youtube here when its ready:
   socials: {
     github: 'https://github.com/hussainjaura',
     linkedin: 'https://www.linkedin.com/in/muhammad-hussain-jaura-b303482b1/',
@@ -19,6 +22,7 @@ export const profile = {
   },
 }
 
+// my jobs, newest first:
 export const experience = [
   {
     role: 'Software Engineer Intern',
@@ -27,6 +31,7 @@ export const experience = [
     period: 'Jan 2026 - Aug 2026',
     logo: 'Co',
     logoImg: 'logos/the_co_op_group_logo.jpg',
+    // what i did there:
     summary: "Part of the engineering team building and maintaining scalable apps used across Co-op's digital platforms.",
     points: [
       'Worked with product, design and QA teams in an agile enviroment.',
@@ -36,10 +41,12 @@ export const experience = [
       'Took part in code reviews and followed engineering best practices.',
       'Supported testing and deployment processes.',
     ],
+    // skills from the job:
     tags: ['Full stack', 'REST APIs', 'Docker', 'Agile', 'Web Engineering', 'Software Design'],
   },
 ]
 
+// skills, each group is one card:
 export const skills = [
   {
     title: 'Languages',
@@ -50,6 +57,7 @@ export const skills = [
     items: ['React', 'Node.js', 'Express.js', 'Django', 'Vite', 'Socket.IO', 'EJS', 'Mongoose', 'Sequelize', 'Jest'],
   },
   {
+    // cloud and devops stuff:
     title: 'Cloud, DevOps & Databases',
     items: ['AWS Lambda', 'AWS Amplify', 'Docker', 'GitHub Actions', 'Render', 'PostgreSQL', 'MySQL', 'MongoDB', 'SQLite', 'Git'],
   },
@@ -59,6 +67,7 @@ export const skills = [
   },
 ]
 
+// uni and school:
 export const education = [
   {
     school: 'Solent University',
@@ -70,6 +79,7 @@ export const education = [
     logoImg: 'logos/solentuni_logo.jpg',
   },
   {
+    // school back home:
     school: 'Lahore Grammar School',
     degree: 'Matriculation (SSC), Computer Science / IT',
     location: 'Lahore, Pakistan',
@@ -80,23 +90,27 @@ export const education = [
   },
 ]
 
+// certs i got:
 export const certificates = [
   { name: 'Certificate in Practical Artificial Intelligence', issuer: 'Solent University', date: 'Feb 2026', logo: 'SU', logoImg: 'logos/solentuni_logo.jpg', skills: 'LLMs · AI' },
   { name: 'Getting Started with Artificial Intelligence', issuer: 'IBM', date: 'Feb 2026', logo: 'IBM', logoImg: 'logos/ibm_logo.jpg', skills: 'Algorithm design · Back-end' },
 ]
 
+// the paragraphs in what makes me different:
 export const different = [
   "I don't stop at the tutorial. Every project I build gets real auth, a real database and a real deploy, because thats where the actual learning happens.",
   "I'm comfortable across the whole stack, from designing a normalised schema and writing triggers, to building REST APIs in Express, to shipping a React UI on AWS. I care about clean code that the next person can read.",
   'I keep my problem solving sharp on LeetCode and I learn fast. Give me a new tool and I will have something running with it by the end of the day.',
 ]
 
+// achievements, logo shows on each card:
 export const achievements = [
   { title: 'Software Engineer Intern at Co-op', desc: 'Eight months on a real engineering team shipping features and APIs used across Co-op digital platforms.', issuer: 'Co-op', logo: 'Co', logoImg: 'logos/the_co_op_group_logo.jpg' },
   { title: '20% tuition scholarship', desc: 'Awarded a 20% tuition discount at Solent University for academic performance.', issuer: 'Solent University', logo: 'SU', logoImg: 'logos/solentuni_logo.jpg' },
   { title: 'Highest mark, 93%', desc: 'Top grade on the full stack Theme Park assessment, while keeping a First-Class average.', issuer: 'Solent University', logo: 'SU', logoImg: 'logos/solentuni_logo.jpg' },
 ]
 
+// all my projects, this site first:
 export const projects = [
   {
     name: 'Developer Portfolio',
@@ -111,6 +125,7 @@ export const projects = [
     repo: 'https://github.com/hussainjaura/Hussain-Portfolio',
   },
   {
+    // halal food finder app:
     name: 'HalalNearMe',
     tag: 'Personal project',
     tech: ['React 19', 'Node.js', 'Express', 'AWS Lambda', 'AWS Amplify', 'PostgreSQL', 'JWT'],
@@ -123,6 +138,7 @@ export const projects = [
     repo: 'https://github.com/hussainjaura/HalalNearMe',
   },
   {
+    // clothing store from my internship:
     name: 'Jaura & Co Clothing',
     tag: 'Internship project',
     tech: ['Node.js', 'Express', 'MySQL', 'Sequelize', 'Stripe', 'Jest'],
@@ -135,6 +151,7 @@ export const projects = [
     repo: 'https://github.com/hussainjaura/Jaura-Co-Website',
   },
   {
+    // database uni project:
     name: 'Online Retail Database',
     tag: 'University assessment',
     tech: ['SQLite', 'SQL', 'Python', 'Tkinter'],
@@ -146,6 +163,7 @@ export const projects = [
     repo: 'https://github.com/hussainjaura/online-retail-database',
   },
   {
+    // task app with live updates:
     name: 'Task Manager',
     tag: 'Internship project',
     tech: ['Node.js', 'Express', 'MongoDB', 'Socket.IO'],
@@ -158,6 +176,7 @@ export const projects = [
     repo: 'https://github.com/hussainjaura/Task-Manager',
   },
   {
+    // theme park uni project:
     name: 'Theme Park Website',
     tag: 'University assessment · 93%',
     tech: ['Node.js', 'Express', 'SQLite3', 'EJS', 'AJAX'],

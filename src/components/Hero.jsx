@@ -1,13 +1,15 @@
+// react, my info and the photo:
 import { useRef } from 'react'
 import { profile } from '../data.js'
 import Photo from './Photo.jsx'
 
+// the little tags that float around my photo:
 const orbit = ['React', 'Node.js', 'AWS', 'Express', 'SQL', 'JS']
 
 export default function Hero({ onContact }) {
   const stage = useRef(null)
 
-  // the photo leans towards the mouse for the 3d look
+  // the photo leans towards the mouse for the 3d look:
   const onMove = (e) => {
     const el = stage.current
     if (!el) return
@@ -17,6 +19,7 @@ export default function Hero({ onContact }) {
   }
 
   return (
+    // the first thing you see on the site:
     <section id="top" className="hero" onMouseMove={onMove}>
       <div className="hero-text reveal">
         <p className="eyebrow">Hey, I'm {profile.name}.</p>
@@ -24,6 +27,7 @@ export default function Hero({ onContact }) {
         <h1>
           Turning ideas into fast, reliable web apps with <span className="grad">Full Stack Engineering</span>
         </h1>
+        {/* short intro and the two buttons: */}
         <p className="intro">{profile.intro}</p>
         <div className="hero-actions">
           <button className="btn btn-primary" onClick={onContact}>Get In Touch</button>
@@ -31,6 +35,7 @@ export default function Hero({ onContact }) {
         </div>
       </div>
 
+      {/* my photo with the spinning rings around it: */}
       <div className="hero-visual reveal">
         <div className="stage" ref={stage}>
           <div className="ring ring-1" />
@@ -38,6 +43,7 @@ export default function Hero({ onContact }) {
           <div className="photo-wrap">
             <Photo className="hero-photo" />
           </div>
+          {/* place each tag around the circle: */}
           {orbit.map((t, i) => (
             <span key={t} className="orbit-chip" style={{ '--i': i, '--n': orbit.length }}>{t}</span>
           ))}

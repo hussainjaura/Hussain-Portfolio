@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { profile } from '../data.js'
 
-// shows my photo, falls back to my initials if the file isnt there yet
+// shows my photo, falls back to my initials if the file isnt there yet:
 export default function Photo({ className = '', alt }) {
+  // if the image fails just show HJ instead:
   const [broken, setBroken] = useState(false)
   if (broken) return <div className={`photo-fallback ${className}`}><span>HJ</span></div>
   return (
+    // my actual photo from the public folder:
     <img
       className={className}
       src={`${import.meta.env.BASE_URL}${profile.photo}`}

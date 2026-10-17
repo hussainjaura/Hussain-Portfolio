@@ -1,13 +1,16 @@
+// the bits this section needs:
 import Heading from './Heading.jsx'
 import TiltCard from './TiltCard.jsx'
 import Logo from './Logo.jsx'
 import { education } from '../data.js'
 
+// education section, one card per school:
 export default function Education() {
   return (
     <section id="education" className="section">
       <Heading>Highlights of my <span className="grad">Education...</span></Heading>
       <div className="edu-grid">
+        {/* school logo then the degree, dates and a note: */}
         {education.map((e) => (
           <TiltCard key={e.school} className="edu-card reveal" max={6}>
             <Logo item={e} big />

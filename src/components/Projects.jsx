@@ -1,13 +1,16 @@
+// the bits this section needs:
 import Heading from './Heading.jsx'
 import TiltCard from './TiltCard.jsx'
 import { projects, profile } from '../data.js'
 import { GithubIcon, ExternalIcon } from './Icons.jsx'
 
+// projects section with a card for each one:
 export default function Projects() {
   return (
     <section id="projects" className="section">
       <Heading>Some of my notable <span className="grad">Projects...</span></Heading>
       <div className="proj-grid">
+        {/* name, tech used and what the project does: */}
         {projects.map((p) => (
           <TiltCard key={p.name} className="proj-card reveal" max={7}>
             <p className="proj-tag">{p.tag}</p>
@@ -18,6 +21,7 @@ export default function Projects() {
             <ul className="dot-list">
               {p.points.map((pt) => <li key={pt}>{pt}</li>)}
             </ul>
+            {/* code and live demo links if they exist: */}
             <div className="proj-links">
               {p.repo && <a href={p.repo} target="_blank" rel="noreferrer"><GithubIcon /> Code</a>}
               {p.live && <a href={p.live} target="_blank" rel="noreferrer"><ExternalIcon /> Live demo</a>}
@@ -25,6 +29,7 @@ export default function Projects() {
           </TiltCard>
         ))}
       </div>
+      {/* button to see the rest on github: */}
       <div className="center reveal">
         <a className="btn btn-ghost" href={profile.socials.github} target="_blank" rel="noreferrer">See everything on GitHub</a>
       </div>

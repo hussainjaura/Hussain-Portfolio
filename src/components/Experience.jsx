@@ -1,17 +1,21 @@
+// the bits this section needs:
 import Heading from './Heading.jsx'
 import TiltCard from './TiltCard.jsx'
 import Logo from './Logo.jsx'
 import { experience } from '../data.js'
 
+// experience section laid out like a timeline:
 export default function Experience() {
   return (
     <section id="experience" className="section">
       <Heading>Highlights of my <span className="grad">Experience</span> so far...</Heading>
       <div className="timeline">
+        {/* each job gets a dot on the line and a card: */}
         {experience.map((job) => (
           <div key={job.company + job.role} className="timeline-row reveal">
             <span className="timeline-dot" />
             <TiltCard className="xp-card" max={5}>
+              {/* company logo, job title and the dates: */}
               <div className="xp-head">
                 <Logo item={job} />
                 <div>
@@ -20,6 +24,7 @@ export default function Experience() {
                 </div>
                 <span className="pill">{job.period}</span>
               </div>
+              {/* short summary then what i did and the skills: */}
               {job.summary && <p className="xp-summary">{job.summary}</p>}
               <ul className="dot-list">
                 {job.points.map((p) => <li key={p}>{p}</li>)}
