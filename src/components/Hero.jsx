@@ -4,7 +4,7 @@ import Photo from './Photo.jsx'
 
 const orbit = ['React', 'Node.js', 'AWS', 'Express', 'SQL', 'JS']
 
-export default function Hero() {
+export default function Hero({ onContact }) {
   const stage = useRef(null)
 
   // the photo leans towards the mouse for the 3d look
@@ -26,7 +26,7 @@ export default function Hero() {
         </h1>
         <p className="intro">{profile.intro}</p>
         <div className="hero-actions">
-          <a href="#contact" className="btn btn-primary">Get In Touch</a>
+          <button className="btn btn-primary" onClick={onContact}>Get In Touch</button>
           <a href="#projects" className="btn btn-ghost">View Projects</a>
         </div>
       </div>

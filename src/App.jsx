@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Background from './components/Background.jsx'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
@@ -9,9 +10,12 @@ import Achievements from './components/Achievements.jsx'
 import Projects from './components/Projects.jsx'
 import Certificates from './components/Certificates.jsx'
 import Footer from './components/Footer.jsx'
+import ContactModal from './components/ContactModal.jsx'
 import useReveal from './hooks/useReveal.js'
 
 function App() {
+  const [contactOpen, setContactOpen] = useState(false)
+  const openContact = () => setContactOpen(true)
   useReveal()
 
   return (
@@ -19,7 +23,7 @@ function App() {
       <Background />
       <Nav />
       <main>
-        <Hero />
+        <Hero onContact={openContact} />
         <Experience />
         <Skills />
         <Education />
@@ -28,7 +32,8 @@ function App() {
         <Projects />
         <Certificates />
       </main>
-      <Footer />
+      <Footer onContact={openContact} />
+      <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
     </>
   )
 }

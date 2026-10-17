@@ -1,5 +1,6 @@
 import Heading from './Heading.jsx'
 import TiltCard from './TiltCard.jsx'
+import Logo from './Logo.jsx'
 import { experience } from '../data.js'
 
 export default function Experience() {
@@ -12,7 +13,7 @@ export default function Experience() {
             <span className="timeline-dot" />
             <TiltCard className="xp-card" max={5}>
               <div className="xp-head">
-                <div className="logo-badge">{job.logo}</div>
+                <Logo item={job} />
                 <div>
                   <h3>{job.role}</h3>
                   <p className="muted">{job.company} • {job.location}</p>

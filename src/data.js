@@ -26,6 +26,7 @@ export const experience = [
     location: 'London, UK · Hybrid',
     period: 'Jan 2026 - Aug 2026',
     logo: 'Co',
+    logoImg: 'logos/the_co_op_group_logo.jpg',
     summary: "Part of the engineering team building and maintaining scalable apps used across Co-op's digital platforms.",
     points: [
       'Worked with product, design and QA teams in an agile enviroment.',
@@ -66,6 +67,7 @@ export const education = [
     period: 'Sep 2024 - Jun 2027',
     note: 'Currently maintaining First-Class level, working on my final year dissertation. Awarded a 20% tuition discount for academic performance.',
     logo: 'SU',
+    logoImg: 'logos/solentuni_logo.jpg',
   },
   {
     school: 'Lahore Grammar School',
@@ -74,12 +76,13 @@ export const education = [
     period: 'May 2012 - Sep 2022',
     note: 'Graduated with 1,057 marks.',
     logo: 'LGS',
+    logoImg: 'logos/lahore_grammar_school_logo.jpg',
   },
 ]
 
 export const certificates = [
-  { name: 'Certificate in Practical Artificial Intelligence', issuer: 'Solent University', date: 'Feb 2026', logo: 'SU', skills: 'LLMs · AI' },
-  { name: 'Getting Started with Artificial Intelligence', issuer: 'IBM', date: 'Feb 2026', logo: 'IBM', skills: 'Algorithm design · Back-end' },
+  { name: 'Certificate in Practical Artificial Intelligence', issuer: 'Solent University', date: 'Feb 2026', logo: 'SU', logoImg: 'logos/solentuni_logo.jpg', skills: 'LLMs · AI' },
+  { name: 'Getting Started with Artificial Intelligence', issuer: 'IBM', date: 'Feb 2026', logo: 'IBM', logoImg: 'logos/ibm_logo.jpg', skills: 'Algorithm design · Back-end' },
 ]
 
 export const different = [

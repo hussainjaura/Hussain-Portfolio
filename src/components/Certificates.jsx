@@ -1,5 +1,6 @@
 import Heading from './Heading.jsx'
 import TiltCard from './TiltCard.jsx'
+import Logo from './Logo.jsx'
 import { certificates } from '../data.js'
 
 export default function Certificates() {
@@ -9,7 +10,7 @@ export default function Certificates() {
       <div className="cert-grid">
         {certificates.map((c) => (
           <TiltCard key={c.name} className="cert-card reveal" max={6}>
-            <div className="logo-badge">{c.logo}</div>
+            <Logo item={c} />
             <div>
               <h3>{c.name}</h3>
               <p className="accent small">{c.issuer} • Issued {c.date}</p>

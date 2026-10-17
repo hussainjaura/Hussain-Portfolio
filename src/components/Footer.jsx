@@ -1,7 +1,7 @@
 import { profile } from '../data.js'
 import { GithubIcon, LinkedinIcon, YoutubeIcon, MailIcon, FileIcon } from './Icons.jsx'
 
-export default function Footer() {
+export default function Footer({ onContact }) {
   const { socials } = profile
   const cvUrl = profile.cv ? `${import.meta.env.BASE_URL}${profile.cv}` : ''
 
@@ -11,7 +11,7 @@ export default function Footer() {
         <h2>Let's build something <span className="grad">together</span></h2>
         <p className="muted">I'm open to full stack engineering roles. My inbox is always open, so feel free to reach out.</p>
         <div className="hero-actions center-row">
-          <a className="btn btn-primary" href={`mailto:${profile.email}`}><MailIcon /> Get In Touch</a>
+          <button className="btn btn-primary" onClick={onContact}><MailIcon /> Get In Touch</button>
           {cvUrl
             ? <a className="btn btn-ghost" href={cvUrl} target="_blank" rel="noreferrer"><FileIcon /> Download CV</a>
             : <span className="btn btn-ghost disabled"><FileIcon /> CV coming soon</span>}

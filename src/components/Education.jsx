@@ -1,5 +1,6 @@
 import Heading from './Heading.jsx'
 import TiltCard from './TiltCard.jsx'
+import Logo from './Logo.jsx'
 import { education } from '../data.js'
 
 export default function Education() {
@@ -9,7 +10,7 @@ export default function Education() {
       <div className="edu-grid">
         {education.map((e) => (
           <TiltCard key={e.school} className="edu-card reveal" max={6}>
-            <div className="logo-badge big">{e.logo}</div>
+            <Logo item={e} big />
             <div>
               <h3>{e.degree}</h3>
               <p className="accent">{e.school}</p>
