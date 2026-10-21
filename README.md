@@ -8,7 +8,30 @@ Scroll below to explore live demos, source code, documentation, and a little mor
 
 ## Projects
 
-### 1. HalalNearMe (React Project)
+### 1. ISC Audit – International Student Compliance Audit (Startup Project)
+
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/hussainjaura/Hours-Tracker)
+
+A full-stack compliance platform for UK employers who hire international students on visas. Students declare their term dates, employers acknowledge them, and the app checks every student's legal weekly work hour limit, building a tamper-proof audit trail that helps protect businesses from £60,000 Right-to-Work fines.
+
+**Tech Stack:** React 18, Vite, React Router v6, Axios, Node.js, Express 5, Prisma ORM, PostgreSQL, JWT, Bcrypt, PDFKit, Resend (email API)
+
+**Features:**
+- Separate student and employer accounts with role-based access (Student, Employer, Admin)
+- JWT authentication with forgot/reset password emails and optional email verification
+- Student term declarations, created by hand or from university term templates
+- Automatic work eligibility checks (term-time vs holiday limits, course level, course end date)
+- Weekly hours tracking (Monday-Sunday) with compliance violation detection and severity levels
+- Student-employer linking with requests, accept/reject and employer acknowledgements
+- Immutable audit log recording IP address, user agent, declarations and change history
+- Downloadable PDF audit packs and term letters generated with PDFKit
+- Compliance dashboards for students and employers
+- Security middleware: rate limiting, security headers, request size limits, CORS and input validation
+- PostgreSQL schema managed with Prisma migrations and a seed script
+
+---
+
+### 2. HalalNearMe (React Project)
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_App-green?style=for-the-badge)](https://main.d3uol1yp55se1c.amplifyapp.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/hussainjaura/HalalNearMe)
@@ -28,7 +51,7 @@ A full-stack web app that helps users find halal restaurants near them anywhere 
 
 ---
 
-### 2. Jaura & Co Clothing Website (Internship Project)
+### 3. Jaura & Co Clothing Website (Internship Project)
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_App-green?style=for-the-badge)](https://jaura-co-website.onrender.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/hussainjaura/Jaura-Co-Website)
@@ -49,7 +72,7 @@ A fully featured e-commerce site built for internship/placement.
 
 ---
 
-### 3. Online Retail Store – Relational Database System (University Assessment)
+### 4. Online Retail Store – Relational Database System (University Assessment)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/hussainjaura/online-retail-database)
 
@@ -71,7 +94,7 @@ A relational database for an online store, taken from business requirements thro
 
 ---
 
-### 4. Jaura's Task Manager App (Internship Project)
+### 5. Jaura's Task Manager App (Internship Project)
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_App-green?style=for-the-badge)](https://task-manager-hoaa.onrender.com)
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/hussainjaura/Task-Manager)
@@ -91,7 +114,7 @@ A personal productivity/task management web app.
 
 ---
 
-### 5. Jaura's Theme Park Website (University Assessment)
+### 6. Jaura's Theme Park Website (University Assessment)
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/hussainjaura/Theme-Park)
 
@@ -124,6 +147,7 @@ A full-stack theme park website with database-driven content and an interactive 
 - Express.js
 - Mongoose
 - Sequelize
+- Prisma ORM
 - SQLite3
 
 #### Frontend:
@@ -138,11 +162,14 @@ A full-stack theme park website with database-driven content and an interactive 
 - AWS Lambda (Serverless)
 - AWS Amplify
 - Neon (Serverless PostgreSQL)
+- PostgreSQL with Prisma Migrations
 - Render
 
 #### Tools & Libraries:
 - Foursquare Places API
 - Stripe (Payment)
+- PDFKit (PDF Generation)
+- Resend (Transactional Email)
 - Bcrypt.js (Password Hashing)
 - Helmet.js (Security)
 - WebSockets & Socket.IO (Real-Time Communication)
@@ -162,6 +189,8 @@ A full-stack theme park website with database-driven content and an interactive 
 - Version Control & Git Workflow
 - Error Handling & Logging
 - Real-Time App Logic
+- Role-Based Access Control
+- Audit Logging & Compliance Tracking
 
 ---
 
