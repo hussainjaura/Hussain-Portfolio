@@ -12,8 +12,8 @@ export const profile = {
   email: 'hussainjaura10@gmail.com',
   // my pic:
   photo: 'me.jpg',
-  // drop the pdf in public/ and set this to 'cv.pdf' later on:
-  cv: '',
+  // my cv pdf in the public folder, the resume buttons open it:
+  cv: 'Hussain-Jaura-CV.pdf',
   // my social links, add youtube here when its ready:
   socials: {
     github: 'https://github.com/hussainjaura',
@@ -110,19 +110,19 @@ export const achievements = [
   { title: 'Highest mark, 93%', desc: 'Top grade on the full stack Theme Park assessment, while keeping a First-Class average.', issuer: 'Solent University', logo: 'SU', logoImg: 'logos/solentuni_logo.jpg' },
 ]
 
-// all my projects, this site first:
+// all my projects, my startup first:
 export const projects = [
   {
-    name: 'Developer Portfolio',
-    tag: 'Personal project · this site',
-    tech: ['React', 'Vite', 'JavaScript', 'CSS3', 'GitHub Pages', 'FormSubmit'],
+    // my startup, the student work hours app:
+    name: 'ISC Audit',
+    tag: 'Startup project · SaaS',
+    tech: ['React', 'Vite', 'Node.js', 'Express', 'Prisma', 'PostgreSQL', 'JWT', 'PDFKit'],
     points: [
-      'The site you are on right now, built from scratch with React and Vite.',
-      '3D tilt cards, a mouse reactive particle background and scroll animations, no UI libraries.',
-      'Contact popup with copy to clipboard and a working message form, deployed on GitHub Pages.',
+      'Helps UK employers keep international students within their visa work hour limits.',
+      'Term declarations, employer acknowledgements and an audit log that cant be changed.',
+      'Checks weekly hour limits, flags violations and exports PDF audit packs.',
     ],
-    live: 'https://hussainjaura.github.io/Hussain-Portfolio/',
-    repo: 'https://github.com/hussainjaura/Hussain-Portfolio',
+    repo: 'https://github.com/hussainjaura/Hours-Tracker',
   },
   {
     // halal food finder app:

@@ -3,7 +3,7 @@ import { profile } from '../data.js'
 import { GithubIcon, LinkedinIcon, YoutubeIcon, MailIcon, FileIcon } from './Icons.jsx'
 
 export default function Footer({ onContact }) {
-  // cv link only works once i add the pdf:
+  // link to my cv pdf in the public folder:
   const { socials } = profile
   const cvUrl = profile.cv ? `${import.meta.env.BASE_URL}${profile.cv}` : ''
 
